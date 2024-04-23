@@ -10,7 +10,7 @@
     
     <div class="bg-black">
       <div class="row">
-          <marquee class="bg-black text text-light fs-5 text text-uppercase" behavior="alternate" direction="left" scrollamount="5">Toy Shop - Bearbrick AUTHENTIC and Playstation 5 LIMITED supply store</marquee>
+          <marquee class="bg-black text text-light fs-5 text text-uppercase" behavior="alternate" direction="left" scrollamount="5">Toy Shop - Bearbrick AUTHENTIC LIMITED supply store</marquee>
       </div>
      
       <div class="row p-4">
@@ -26,13 +26,6 @@
             </form> --}}
         </div>
         <div class="col mt-2 text-end">
-          {{!-- {{#if logined}}
-            <a href="/authentication/logout"> <input class="btn btn-danger" type="button" value="Logout"></a>
-          {{else}}
-            
-          {{/if}} --}}
-          <a href="/authentication/login"> <input class="btn btn-danger" type="button" value="Login"></a>
-          <a href="/authentication/register"> <input class="btn btn-primary" type="button" value="Register"></a>
           
         </div> 
       </div>
@@ -46,21 +39,14 @@
           <li class="nav-item">
             <a class="nav-link text-dark fw-bold fs-6 " href="/toymodel/list">TOY MODELS</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark fw-bold fs-6" href="/controllertoy/list">CONTROLLER TOYS</a>
-          </li>
           {{!-- <li class="nav-item">
             <a class="nav-link text-dark fw-bold fs-6" href="#">SERVICE</a>
           </li> --}}
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark fw-bold fs-6" data-bs-toggle="dropdown" href="#">SERVICE</a>
+            <a class="nav-link dropdown-toggle text-dark fw-bold fs-6" data-bs-toggle="dropdown" href="#">STALL MANAGEMENT</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/controllertoy">Controller Toys</a></li>
               <li><a class="dropdown-item" href="/toymodel">Toy Models</a></li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark fw-bold fs-6" href="#">ABOUT</a>
           </li>
         </ul>
     </div>
