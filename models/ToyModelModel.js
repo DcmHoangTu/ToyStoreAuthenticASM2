@@ -1,24 +1,16 @@
-var mongoose = require('mongoose');
-var ToyModelSchema = mongoose.Schema(
-    {
-        name : {
-            type : String,
-            required : [true, 'Name can not be empty']
-        },
-        size : String,
-        material : {
-            type : String,
-            required : true
-        },    
-        price : Number,
-        quantity : {
-            type : Number,
-            min : 1, 
-            max : 100
-        },
-        image : String,
-    }
-)
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-var ToyModelModel = mongoose.model('toymodel', ToyModelSchema, 'toymodel');
-module.exports = ToyModelModel;
+const ToyModelSchema = new Schema({
+    name: String,
+    size: String,
+    price: Number,
+    image: String,
+    classify: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'classify'
+    }
+});
+
+const ToyModel = mongoose.model('toymodel', ToyModelSchema, 'toymodel');
+module.exports = ToyModel;
